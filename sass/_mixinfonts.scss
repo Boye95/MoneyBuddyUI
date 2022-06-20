@@ -1,0 +1,52 @@
+// Importing fonts using @font-face
+
+// Sporting Grotesque Bold
+@font-face {
+  font-family: 'Sporting Grotesque Bold';
+  src: url('../fonts/SportingGrotesque-Bold.otf');
+}
+
+// Sporting Grotesque Regular
+@font-face {
+  font-family: 'Sporting Grotesque Regular';
+  src: url('../fonts/SportingGrotesque-Regular.otf');
+}
+
+// SF UI Medium
+@font-face {
+  font-family: 'SF UI Medium';
+  src: url('../fonts/sf-ui-display-medium.otf');
+}
+
+// SF UI Semibold
+@font-face {
+  font-family: 'SF UI Semibold';
+  src: url('../fonts/sf-ui-display-semibold.otf');
+}
+
+// Font names variables
+$SportingBold: 'Sporting Grotesque Bold';
+$SportingRegular: 'Sporting Grotesque Regular';
+$SFUIMedium: 'SF UI Medium';
+$SFUISemibold: 'SF UI Semibold';
+
+// Font Mixins
+@mixin fontSportingBold {
+  font-family: $SportingBold;
+  font-weight: 700;
+}
+
+@mixin fontSportingRegular {
+  font-family: $SportingRegular;
+  font-weight: 400;
+}
+    
+@mixin fontSFUIMedium {
+  font-family: $SFUIMedium;
+  font-weight: 500;
+}
+
+@mixin fontSFUISemibold {
+  font-family: $SFUISemibold;
+  font-weight: 600;
+}

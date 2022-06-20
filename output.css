@@ -1,0 +1,18 @@
+@font-face {
+  font-family: "Sporting Grotesque Bold";
+  src: url("../fonts/SportingGrotesque-Bold.otf");
+}
+@font-face {
+  font-family: "Sporting Grotesque Regular";
+  src: url("../fonts/SportingGrotesque-Regular.otf");
+}
+@font-face {
+  font-family: "SF UI Medium";
+  src: url("../fonts/sf-ui-display-medium.otf");
+}
+@font-face {
+  font-family: "SF UI Semibold";
+  src: url("../fonts/sf-ui-display-semibold.otf");
+}
+
+/*# sourceMappingURL=output.css.map */
