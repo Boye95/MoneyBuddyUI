@@ -1,2 +1,48 @@
 @import "mixinfonts";
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+// Setting background image for the pag
+body {
+    background: url(../files/background.png) no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// Styling the container
+#container {
+    height: 90vh;
+    width: 90vw;
+    background-color: azure;
+}
+
+// Styling the header
+#header {
+    display: flex;
+    justify-content: space-between;
+    background-color: bisque;
+
+    // Styling the logo
+    #logo {
+        width: 10%;
+        @include fontSportingBold;
+        
+    }
+
+    #nav {
+        width: 60%;
+
+        a {
+            text-decoration: none;
+            color: $moneyGrey;
+            @include fontSFUISemibold;
+        }
+    }
+}
