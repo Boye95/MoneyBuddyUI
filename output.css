@@ -93,13 +93,43 @@ body {
   background-color: bisque;
   display: flex;
   justify-content: space-evenly;
-  margin-top: 2rem;
   width: 100%;
+  height: 60%;
+  position: relative;
+  overflow: hidden;
+  margin-top: -1.5rem;
 }
 #center .male-student {
-  height: 30.125rem;
+  height: 170%;
   width: auto;
-  border: 2px solid #6E4CD1;
+  position: absolute;
+  left: -7.6rem;
+  top: -11rem;
+}
+#center .female-student {
+  height: 170%;
+  width: auto;
+  position: absolute;
+  right: -7.6rem;
+  top: -11rem;
+}
+#center #center-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: chartreuse;
+}
+#center #center-center #text-center {
+  font-family: "SF UI Medium";
+  font-weight: 500;
+  color: #706757;
+  text-align: center;
+}
+#center #center-center #text-center span {
+  font-family: "SF UI Semibold";
+  font-weight: 600;
+  color: #333028;
 }
 
 /*# sourceMappingURL=output.css.map */
