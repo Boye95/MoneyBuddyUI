@@ -48,6 +48,10 @@ body {
             color: $moneyGrey;
             @include fontSFUISemibold;
             font-size: 18px;
+
+            &:hover {
+                color: $moneyDark;
+            }
         }
 
         .login {
@@ -189,6 +193,7 @@ body {
                 justify-content: space-between;
                 align-items: center;
                 gap: 1rem;
+                cursor: pointer;
             }
         }
 
@@ -201,6 +206,56 @@ body {
             font-size: 17px;
             color: $moneyGrey;
             margin-bottom: 3rem;
+            cursor: pointer;
+        }
+    }
+
+    &::before {
+        content: url("./files/money1.svg");
+        display: flex;
+        position: absolute;
+        height: 2rem;
+        left: 0px;
+        top: 0px;
+        z-index: 2;
+    }
+
+    &::after {
+        content: url("./files/money2.svg");
+        display: flex;
+        position: absolute;
+        height: 2rem;
+        right: 0;
+        top: 0;
+        z-index: 2;
+    }
+}
+
+#stat {
+    display: flex;
+    justify-content: space-between;
+
+    .stats {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2.5rem;
+        height: 6rem;
+        width: 15rem;
+        background: #ffffff78;
+        border: 1px solid #C8BBA3;
+        backdrop-filter: blur(37px);
+
+        .figure {
+            @include fontSportingBold;
+            font-size: 25px;
+        }
+
+        .label {
+            @include fontSFUIMedium;
+            font-size: 17px;
+            color: #706757;
         }
     }
 }

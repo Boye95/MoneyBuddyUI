@@ -58,6 +58,9 @@ body {
   font-weight: 600;
   font-size: 18px;
 }
+#header #nav .link:hover {
+  color: #333028;
+}
 #header #nav .login {
   color: #333028;
   background-color: #C5B1FF;
@@ -190,6 +193,7 @@ body {
   justify-content: space-between;
   align-items: center;
   gap: 1rem;
+  cursor: pointer;
 }
 #center #center-center #backby {
   display: flex;
@@ -201,6 +205,53 @@ body {
   font-size: 17px;
   color: #706757;
   margin-bottom: 3rem;
+  cursor: pointer;
+}
+#center::before {
+  content: url("./files/money1.svg");
+  display: flex;
+  position: absolute;
+  height: 2rem;
+  left: 0px;
+  top: 0px;
+  z-index: 2;
+}
+#center::after {
+  content: url("./files/money2.svg");
+  display: flex;
+  position: absolute;
+  height: 2rem;
+  right: 0;
+  top: 0;
+  z-index: 2;
+}
+
+#stat {
+  display: flex;
+  justify-content: space-between;
+}
+#stat .stats {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2.5rem;
+  height: 6rem;
+  width: 15rem;
+  background: rgba(255, 255, 255, 0.4705882353);
+  border: 1px solid #C8BBA3;
+  backdrop-filter: blur(37px);
+}
+#stat .stats .figure {
+  font-family: "Sporting Grotesque Bold";
+  font-weight: 700;
+  font-size: 25px;
+}
+#stat .stats .label {
+  font-family: "SF UI Medium";
+  font-weight: 500;
+  font-size: 17px;
+  color: #706757;
 }
 
 /*# sourceMappingURL=output.css.map */
